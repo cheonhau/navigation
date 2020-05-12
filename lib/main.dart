@@ -1,5 +1,6 @@
 // tham khao : https://viblo.asia/p/flutter-navigator-and-routing-Do754beeZM6
 import 'package:flutter/material.dart';
+import './screens/filters_screen.dart';
 import './screens/tabs_screen.dart';
 
 import './screens/meal_detail_screen.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         // '/category-meals':(ctx) => CategoryMealsScreen(),
         CategoryMealsScreen.routeName: (ctx) =>CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) =>MealDetailScreen(),
+        FiltersScreen.routeName : (ctx) => FiltersScreen(),
         // để có thể tạo hiệu ứng chuyển cảnh như tài liệu tham khảo trên hay các động thái khác trong router
       },
       onGenerateRoute: (settings) {
