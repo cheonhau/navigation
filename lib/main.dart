@@ -1,5 +1,6 @@
 // tham khao : https://viblo.asia/p/flutter-navigator-and-routing-Do754beeZM6
 import 'package:flutter/material.dart';
+import './screens/tabs_screen.dart';
 
 import './screens/meal_detail_screen.dart';
 import './screens/category_meals_screen.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       // home: CategoriesScreen(),
       initialRoute: '/', // default is '/'
       routes: {
-        '/' : (ctx) => CategoriesScreen(),
+        '/' : (ctx) => TabsScreen(),
         // '/category-meals':(ctx) => CategoryMealsScreen(),
         CategoryMealsScreen.routeName: (ctx) =>CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) =>MealDetailScreen(),
